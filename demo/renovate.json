@@ -14,7 +14,7 @@
         "dependencies": {
           "org.springframework.boot:spring-boot-starter-web": {
             "rangeStrategy": "custom",
-            "versions": ["2.5.0"]
+            "versions": [">=1.0.0 <2.0.0"]
           },
           "org.springframework.boot:spring-boot-starter-data-jpa": {
             "rangeStrategy": "custom",

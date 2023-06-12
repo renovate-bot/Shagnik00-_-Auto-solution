@@ -9,7 +9,7 @@
   
  <properties>
 	 <java.version>11</java.version>
-    <springBootStarterWebVersion>2.5.2</springBootStarterWebVersion>
+    <springBootStarterWebVersion>1.5.12</springBootStarterWebVersion>
     <springBootStarterDataJpaVersion>2.5.2</springBootStarterDataJpaVersion>
     <!-- Add more Spring Boot dependencies and their versions here -->
   </properties>
