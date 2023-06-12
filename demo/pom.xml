@@ -1,39 +1,42 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
- <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.example</groupId>
   <artifactId>Spring</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
- <properties>
-	 <java.version>11</java.version>
-    <springBootStarterWebVersion>1.5.12</springBootStarterWebVersion>
-    <springBootStarterDataJpaVersion>2.5.2</springBootStarterDataJpaVersion>
-    <!-- Add more Spring Boot dependencies and their versions here -->
+
+  <properties>
+    <java.version>11</java.version>
+    <springBootVersion>2.5.2</springBootVersion>
+    <springBootVersion>2.6.13</springBootVersion>
   </properties>
-  
+
   <dependencies>
+    <!-- Spring Boot Starter Web -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>${springBootStarterWebVersion}</version>
+      <version>${springBootVersion}</version>
     </dependency>
+
+    <!-- Spring Boot Starter Data JPA -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
-      <version>${springBootStarterDataJpaVersion}</version>
+      <version>${springBootVersion}</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-mongodb -->
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-data-mongodb</artifactId>
-    <version>2.7.3</version>
-</dependency>
+
+    <!-- Spring Boot Starter Data MongoDB -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-mongodb</artifactId>
+      <version>2.7.3</version>
+    </dependency>
 
     <!-- Add more Spring Boot dependencies here -->
   </dependencies>
- 
-  <!-- ... -->
+
+  <!-- ... -->
 </project>

@@ -6,18 +6,19 @@
       "depTypeList": ["maven"]
     }
   ],
-  "schedule": ["every Hour"],
+  "schedule": ["every hour"],
   "versioning": {
-    "default": "lockFileMaintenance",
-    "lockFileMaintenance": {
+    "default": "auto",
+    "auto": {
+      "rangeStrategy": "widen",
       "pinVersions": {
         "dependencies": {
           "org.springframework.boot:spring-boot-starter-web": {
             "rangeStrategy": "custom",
-            "versions": [">=1.0.0 <2.0.0"]
+            "versions": ["1.0.0 - 1.9.9"]
           },
           "org.springframework.boot:spring-boot-starter-data-jpa": {
-            "rangeStrategy": "custom",
+            "rangeStrategy": "auto",
             "versions": ["2.5.0"]
           }
         }
